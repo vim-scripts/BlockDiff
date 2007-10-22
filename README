@@ -1,0 +1,12 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2048
+
+This script provides a simple and fast way to see the difference between two blocks of text.
+This might be similar source code functions, definitions, etc.
+
+Just select the first portion, goto Menu "Tools->BlockDiff->This is block 1".
+Select the second portion, goto Menu "Tools->BlockDiff->This is block 2, start diff".
+The script will open a new tab, split it and diff the two portions.
+
+If you prefer the mouse context-menu, a key mapping or ex commands, they all are prepared in the file, just remove the comment and/or change the mappings.
+
+Currently only for Vim 7.* with GUI (and tabs). 
