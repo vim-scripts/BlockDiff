@@ -21,17 +21,17 @@
 "       - ,d2
 "   - Script opens a new tab, splits it and shows the diff between
 "     the two blocks.
-"   - Close the tab when done 
-" 
+"   - Close the tab when done
+"
 " History:
 "   V1.0: Initial upload
 "   V1.1: Added commands and inclusion guard, Thanks to Ingo Karkat
 
 
-" Avoid installing twice or when in compatible mode 
-if exists('g:loaded_blockdiff') || (v:version < 700) 
-finish 
-endif 
+" Avoid installing twice or when in compatible mode
+if exists('g:loaded_blockdiff') || (v:version < 700)
+finish
+endif
 let g:loaded_blockdiff = 1
 
 
@@ -55,8 +55,8 @@ set cpo&vim
     "vmap ,d1 :call BlockDiff_GetBlock1()<CR>
     "vmap ,d2 :call BlockDiff_GetBlock2()<CR>
 
-" Commands 
-    command! -range BlockDiff1 :<line1>,<line2>call BlockDiff_GetBlock1() 
+" Commands
+    command! -range BlockDiff1 :<line1>,<line2>call BlockDiff_GetBlock1()
     command! -range BlockDiff2 :<line1>,<line2>call BlockDiff_GetBlock2()
 
 
